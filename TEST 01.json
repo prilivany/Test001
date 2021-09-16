@@ -1,0 +1,108 @@
+{
+  "version": 6,
+  "entities": [
+    {
+      "entity": {
+        "type": "Project",
+        "id": "aa3d2fbc-ba6d-4913-a459-0e9acbdd266d",
+        "name": "Test01"
+      },
+      "children": [
+        {
+          "entity": {
+            "type": "Request",
+            "method": {
+              "link": "http://tools.ietf.org/html/rfc7231#section-4.3.1",
+              "name": "GET"
+            },
+            "body": {
+              "formBody": {
+                "overrideContentType": true,
+                "encoding": "application/x-www-form-urlencoded",
+                "items": []
+              },
+              "bodyType": "Text"
+            },
+            "uri": {
+              "query": {
+                "delimiter": "&",
+                "items": []
+              },
+              "scheme": {
+                "name": "> https"
+              },
+              "host": "jsonplaceholder.cypress.io",
+              "path": "/posts"
+            },
+            "description": "GET",
+            "id": "01db3242-dc4d-405d-bf99-37243c8b8fa3",
+            "name": "GET",
+            "headers": [
+              {
+                "enabled": true,
+                "name": "title",
+                "value": "String"
+              },
+              {
+                "enabled": true,
+                "name": "body",
+                "value": "String"
+              },
+              {
+                "enabled": true,
+                "name": "userId",
+                "value": "Integer"
+              },
+              {
+                "enabled": true,
+                "name": "id",
+                "value": "Integer"
+              }
+            ]
+          }
+        },
+        {
+          "entity": {
+            "type": "Request",
+            "method": {
+              "requestBody": true,
+              "link": "http://tools.ietf.org/html/rfc7231#section-4.3.3",
+              "name": "POST"
+            },
+            "body": {
+              "formBody": {
+                "overrideContentType": true,
+                "encoding": "application/x-www-form-urlencoded",
+                "items": []
+              },
+              "bodyType": "Text",
+              "textBody": "{\n  \"title\" : \"recommendation\",\n  \"body\" : \"motorcycle\",\n  \"userId\" : 12\n}"
+            },
+            "uri": {
+              "query": {
+                "delimiter": "&",
+                "items": []
+              },
+              "scheme": {
+                "name": "> https"
+              },
+              "host": "jsonplaceholder.cypress.io",
+              "path": "/posts"
+            },
+            "description": "",
+            "id": "4d6ad8e9-80db-498d-8c73-8e1922f24831",
+            "name": "POST",
+            "headers": [
+              {
+                "enabled": true,
+                "name": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "assertions": []
+          }
+        }
+      ]
+    }
+  ]
+}
